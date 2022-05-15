@@ -7,9 +7,18 @@
     <title>Relógio</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body>
-Oi
-</body>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <script src="javascripfunctions.js"></script>
+  </head>
+  <body>
+    <div class="direita">
+      <a id="fullscreen1" href="#" onclick="javascript:openFullscreen();"><i class="fa fa-expand fa-lg" aria-hidden="true"></i></a>
+      <a hidden id="fullscreen2" href="#" onclick="javascript:closeFullscreen();"><i class="fa fa-compress fa-lg" aria-hidden="true"></i></a>
+    </div>
+    <div class="centralizar">
+      <span class="maior" id="hora"></span>
+      <br>
+      <span class="menor" id="hoje"></span>
+    </div>
+  </body>
 </html>
