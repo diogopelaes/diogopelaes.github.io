@@ -18,27 +18,34 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
-      <div class="container-fluid">
-        <div class="row w-100">
-          <div class="col">
-            <a id="home" class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-          </div>
-          <div class="col text-right">
-            <a id="fullscreen1" class="navbar-brand" href="#" onclick="javascript:openFullscreen();"><i class="fa fa-expand" aria-hidden="true"></i></a>
-            <a hidden id="fullscreen2" class="navbar-brand" href="#" onclick="javascript:closeFullscreen();"><i class="fa fa-compress" aria-hidden="true"></i></a>
-            <a href="#" onclick="javascript:aumentar();"><i class="fa fa-font fa-lg" aria-hidden="true"></i></a>
-            <a href="#" onclick="javascript:diminuir();"><i class="fa fa-font" aria-hidden="true"></i></a>
-          </div>
-        </div>
+      <a id="home" class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+      <button style="background-color:gray;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a id="fullscreen1" href="#" onclick="javascript:openFullscreen();"><i class="fa fa-expand fa-lg" aria-hidden="true"></i></a>
+          <a hidden id="fullscreen2" href="#" onclick="javascript:closeFullscreen();"><i class="fa fa-compress fa-lg" aria-hidden="true"></i></a>
+        </span>
       </div>
     </nav>
     <div class="centralizar">
       <span class="maior" id="hora"></span>
-      <br>
-      <span class="menor" id="hoje"></span>
+      <button >Iniciar</button>
     </div>
-    <div class="centralizar">
+    <!-- <div class="centralizar">
       <img src="anya.png" alt="Anya">
-    </div>
+    </div> -->
   </body>
 </html>
