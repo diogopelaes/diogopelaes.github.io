@@ -1,4 +1,5 @@
 body {
+    min-width: 635px;
     margin: 0px;
     vertical-align: middle;
     font-family: "Lucida Console", "Courier New", monospace;
@@ -30,16 +31,3 @@ img {
 ::-webkit-scrollbar {
     display: none;
 }
-
-/* ::-webkit-scrollbar {
-    width:10px;
-    height: 10px;
-}
-    
-::-webkit-scrollbar-track {
-    background:#333;
-}
-
-::-webkit-scrollbar-thumb {
-    background: grey;
-} */
