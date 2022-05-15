@@ -6,15 +6,9 @@ body {
     color: orange;
     background-color: black;
 }
-.direita {
-    text-align: right;
-    color: white;
-    padding-top: 25px;
-    padding-right: 50px;
-}
 .centralizar {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .maior {
     font-size: 100px;
@@ -24,8 +18,28 @@ body {
     font-size: 50px;
 }
 a {
-    color: white;
+    color: whitesmoke !important;
 }
 a:hover {
-    color: orange;
+    color: orange !important;
 }
+img {
+    border: 2px solid whitesmoke;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+}
+    
+::-webkit-scrollbar-track {
+    background:#333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+} */
