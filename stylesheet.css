@@ -7,23 +7,29 @@ body {
     color: orange;
     background-color: black;
 }
+
 .centralizar {
     text-align: center;
     padding-top: 30px;
 }
+
 .maior {
     font-size: 100px;
     padding-bottom: 0px;
 }
+
 .menor {
     font-size: 50px;
 }
+
 a {
     color: whitesmoke !important;
 }
+
 a:hover {
     color: orange !important;
 }
+
 img {
     border: 2px solid whitesmoke;
 }
@@ -31,3 +37,60 @@ img {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.btn-outline-light {
+    width: 250px;
+}
+
+.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active, .btn-outline-light.active, .open>.dropdown-toggle.btn-outline-light {
+    color: orange;
+    background-color: transparent;
+    border-color: orange; /*set the color you want here*/
+    width: 250px;
+}
+
+.fracoes {
+    width: 500px;
+    height: 100px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-collapse: collapse;
+}
+
+.resultado {
+    color: orange;
+    width: 60px;
+    font-size: 40px;
+}
+
+.partes {
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+.frac {
+    width: 30px;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+}
+
+.parte_pintada {
+    background-color: #CA6F1E;
+}
+
+.slider::-moz-range-thumb {
+    pointer-events: auto !important;
+  }
+  
+.slider::-webkit-slider-thumb {
+    pointer-events: auto !important;
+  }
+  
+.slider::-ms-thumb {
+    pointer-events: auto !important;
+  }
+  
+.slider::-ms-track {
+    pointer-events: none !important;
+  }
