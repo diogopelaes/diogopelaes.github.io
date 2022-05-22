@@ -94,3 +94,15 @@ img {
 .slider::-ms-track {
     pointer-events: none !important;
   }
+
+input[type=checkbox] {
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    transform: scale(1.5);
+}
+.label_checkbox {
+    padding-top: 10px!important;
+    padding-left: 10px!important;
+}

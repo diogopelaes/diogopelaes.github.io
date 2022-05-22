@@ -44,13 +44,13 @@
   </nav>
   <div class="container">
     <div class="row justify-content-md-center py-3">
-      <h1>Frações Equivalentes</h1>
+      <h1>Frações</h1>
     </div>
     <div class="row justify-content-md-center py-3">
       <div class="col-md-auto">
         <table class="fracoes">
           <tr id="fig1">
-            <td class="partes" id="parte1" onclick='javascript:pintar_parte(this, "1");'></td>
+            <td class="partes" id="parte1" onclick='javascript:pintar_parte(this, "1");ver_frac();'></td>
           </tr>
         </table>
       </div>
@@ -59,50 +59,10 @@
           <input type="range" class="slider" min="1" max="20" step="1" value="1" id="sliderRange1"
             oninput='javascript:fraction(this, "1");'>
         </div>
-        <table class="frac">
-          <tr>
-            <td style="border-bottom: 1px solid whitesmoke;">
-              <div id="numerador1">0</div>
-            </td>
-          </tr>
-          <tr>
-            <td id="denominador1">
-              1
-            </td>
-          </tr>
-        </table>
+        <div id="numerador1" hidden>0</div>
+        <span class="frac" id="denominador1">1</span><span id="parte_text" class="frac"> Parte</span><br>
+        <input type="checkbox" id="show_frac" onclick="javascript:ver_frac();" class="checkbox"><label class="label_checkbox">Ver fração</label>
       </div>
-    </div>
-    <div class="row justify-content-md-center py-3">
-      <div class="col-md-auto">
-        <table class="fracoes">
-          <tr id="fig2">
-            <td class="partes" id="parte2" onclick='javascript:pintar_parte(this, "2");'></td>
-          </tr>
-        </table>
-      </div>
-      <div class="col-md-auto">
-        <div>
-          <input type="range" class="slider" min="1" max="20" step="1" value="1" id="sliderRange2"
-            oninput='javascript:fraction(this, "2");'>
-        </div>
-        <table class="frac">
-          <tr>
-            <td style="border-bottom: 1px solid whitesmoke;">
-              <div id="numerador2">0</div>
-            </td>
-          </tr>
-          <tr>
-            <td id="denominador2">
-              1
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div id="verificar" class="row justify-content-md-center py-3 align-items-center">
-      <div class="col col-lg-6 py-3 text-center"><button type="button" class="btn btn-outline-light"
-          onclick="javascript:verificar();">Verificar</button></div>
     </div>
     <div id="resul" hidden>
       <div class="row justify-content-md-center py-3 align-items-center">
@@ -119,20 +79,6 @@
             </tr>
           </table>
         </div>
-        <div id="igual" class="col-md-auto resultado"></div>
-        <div class="col-md-auto">
-          <table class="frac">
-            <tr>
-              <td class="resultado" style="border-bottom: 1px solid orange;">
-                <div id="n_resul2"></div>
-              </td>
-            </tr>
-            <tr>
-              <td class="resultado" id="d_resul2">
-              </td>
-            </tr>
-          </table>
-        </div>
       </div>
       <div class="row justify-content-md-center py-3 align-items-center">
         <div id="resul_text" class="col-md-auto" style="color: whitesmoke; font-size: 35px;"></div>
@@ -140,7 +86,7 @@
     </div>
   </div>
   <script src="js/telacheia.js"></script>
-  <script src="js/frac_equivalentes.js"></script>
+  <script src="js/frac.js"></script>
 </body>
 
 </html>
