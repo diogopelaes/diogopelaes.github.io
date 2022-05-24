@@ -24,7 +24,6 @@
     crossorigin="anonymous"></script>
 
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
     <div class="container-fluid">
@@ -47,12 +46,38 @@
     <div class="row justify-content-md-center py-3">
       <h1>Alguns números primos</h1>
     </div>
+    <div class="row justify-content-md-center">
+      <h3>Apague os números que NÃO são primos</h3>
+    </div>
     <div class="row justify-content-md-center py-3">
-      <table id="primos">
+      <table id="tabela_numeros">
+      </table>
+    </div>
+    <div class="row justify-content-md-center py-3">
+      <table>
+        <tr>
+          <td  class="acertos_erros">
+            Acertos:
+          </td>
+          <td  class="acertos_erros" style="text-align: left;">
+            <span id="acertos" style="color:whitesmoke;"">0</span>
+            <span id="fafaacerto" class="fa fa-check" style="color: #2ECC71;"hidden></span>
+          </td>
+        </tr>
+        <tr>
+          <td  class="acertos_erros">
+            Erros:
+          </td>
+          <td  class="acertos_erros" style="text-align: left;">
+            <span id="erros" style="color:whitesmoke;">0</span>
+            <span id="fafaerro" class="fa fa-times" style="color: #E74C3C;" hidden></span>
+          </td>
+        </tr>
       </table>
     </div>
   </div>
   <script src="js/telacheia.js"></script>
+  <script src="js/primos.js"></script>
 </body>
 
 </html>
