@@ -34,5 +34,4 @@ function verificar(element) {
         fafaacerto.hidden = false;
         document.getElementById('fafaerro').hidden = true;
     }
-    console.log(n % 2);
 }
