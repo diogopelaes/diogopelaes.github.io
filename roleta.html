@@ -1,0 +1,368 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>A Roleta da Sorte</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/roleta.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery.cycle.all.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function(){
+  $("#m1b").click(function(){
+    	
+		$("#b4").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+  });
+  
+  $("#m2b").click(function(){
+    	
+		$("#a2").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+  });
+  
+  $("#m3b").click(function(){
+    	
+		$("#c3").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+  });
+  
+  $("#m4b").click(function(){
+    	
+		$("#a4").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+  });
+  
+  
+  $("#c1b").click(function(){
+    	
+		$("#a1").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+		
+		
+		
+  });
+  
+  $("#c2b").click(function(){
+    	
+		$("#c4").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+	
+  });
+  
+  $("#c3b").click(function(){
+    	
+		$("#a3").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+  });
+  
+  $("#c4b").click(function(){
+    	
+		$("#c1").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+	
+  });
+  
+  $("#j1b").click(function(){
+    	
+		$("#b2").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		
+		var ok = $("#ok").val();
+		
+		if(ok == 's'){
+		
+		$("#nomes").fadeOut(2000);
+		$("#quest").delay(2500).fadeIn(4000);
+		
+		
+    	
+		
+		
+		}
+	
+  });
+  
+  $("#j2b").click(function(){
+    	
+		$("#c2").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+	
+  });
+  
+  $("#j3b").click(function(){
+    	
+		$("#b1").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+	
+  });
+  
+  $("#j4b").click(function(){
+    	
+		$("#b3").fadeTo(2500,0);
+		$(this).fadeTo(250,0);
+		$("#roda").fadeOut();
+	
+  });
+  
+  
+  var voltas = -1;
+   $("#rodarbtn").click(function(){
+    	$("#roda").hide();
+		voltas++;
+		
+		if(voltas == 0){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MIRA Clica no botão 4");
+			
+			
+		}
+		
+		
+		if(voltas == 1){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("JOTO Clica no botão 2");
+			
+		}
+		
+		
+		if(voltas == 2){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MI Clica no botão 1");
+			
+		}
+		
+		if(voltas == 3){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MI Clica no botão 3");
+			
+		}
+		
+		if(voltas == 4){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("JOTO Clica no botão 4");
+			
+		}
+		
+		if(voltas == 5){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MI Clica no botão 2");
+			
+		}
+		
+		if(voltas == 6){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MIRA Clica no botão 2");
+			
+		}
+		
+		if(voltas == 7){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("JOTO Clica no botão 3");
+			
+		}
+		
+		if(voltas == 8){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MIRA Clica no botão 1");
+			
+		}
+		
+		if(voltas == 9){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MIRA Clica no botão 3");
+			
+		}
+		
+		if(voltas == 10){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("MI Clica no botão 4");
+			
+		}
+		
+		if(voltas == 11){
+			$("#roda").slideDown(2000);
+    		$("#roda").html("JOTO Clica no botão 1");
+			$("#ok").val('s');
+		}
+		
+		
+		
+		
+  });
+  
+  $("#showimg").click(function(){
+    	$("#imgpage").show(3000);
+		
+   		
+       	musica.play();
+  });
+  
+  
+   $("#showbtn").click(function(){
+    	var r = $("#res").val();
+		
+		if(r != 'reflexo espelhado'){
+			alert("ERRADÍSSIMO");
+			}
+  });
+   
+   $("#imgFlyer").cycle({ 
+		fx:      'fade', 
+		delay:   -3000 
+	});
+	
+	$("#flyerText").cycle({ 
+		fx:      'turnDown', 
+		delay:   -4000 
+	});
+  
+});
+</script>
+
+
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Roleta da Sorte</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+        <h2>
+        1. Rodar a roleta para saber quem vira o bloco.<br>
+        2. Depois de apresentada a imagem tentar adivinhar<br>
+        3. Se ninguém adivinhar clicar em "Descobrir"
+        </h2>
+			<li><a href="#page2">Jogar</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Roleta da Sorte</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Roleta da Sorte</h1>
+        
+	</div>
+	<div data-role="content">	
+    	
+        
+        <div id="game">
+        	<div id="rodacontent">
+            	<div id="rodabtn">
+                	<div id="rodarbtn"><img src="roda.png" width="80" height="80"/></div>
+                </div>
+                
+                <div id="roda" style="display:none">
+                	
+                </div>
+            </div>
+           <div id="quest" style="display:none;">Qual é a imagem?
+           <br>
+          <img id="showbtn" src='btn.png' width="40" height="40" style="float:right; margin-right: 20px; border: solid 1px #000000; vertical-align:middle;" /> <input type="text" id="resp"/> 
+           <a href="#page3"  id="showimg">Descobrir</a></div>
+           
+        	<div id="nomes">
+        	<div id="m" class="namedivmira">
+            	<div id="m1b" class="btn">Mira 1</div>
+                <div id="m2b" class="btn">Mira 2</div>
+                <div id="m3b" class="btn">Mira 3</div>
+                <div id="m4b" class="btn">Mira 4</div>
+    		</div>
+            
+           	 <div id="c" class="namedivmi">
+            	<div id="c1b" class="btn">&nbsp; Mi &nbsp;&nbsp;1</div>
+                <div id="c2b" class="btn">&nbsp; Mi &nbsp;&nbsp;2</div>
+                <div id="c3b" class="btn">&nbsp; Mi &nbsp;&nbsp;3</div>
+                <div id="c4b" class="btn">&nbsp; Mi &nbsp;&nbsp;4</div>
+    		</div>
+            
+         	   <div id="j" class="namedivjoto">
+            	<div id="j1b" class="btn">Joto 1</div>
+                <div id="j2b" class="btn">Joto 2</div>
+                <div id="j3b" class="btn">Joto 3</div>
+                <div id="j4b" class="btn">Joto 4</div>
+    		</div>
+        </div>
+       
+		<div id="flyer">
+        	
+        	<img id="a1" src='a1.png' class="img"/>
+            <img id="b1" src='b1.png' class="img"/>
+            <img id="c1" src='c1.png' class="img"/>
+            
+            <img id="a2" src='a2.png' class="img"/>
+            <img id="b2" src='b2.png' class="img"/>
+            <img id="c2" src='c2.png' class="img"/>
+            
+            <img id="a3" src='a3.png' class="img"/>
+            <img id="b3" src='b3.png' class="img"/>
+            <img id="c3" src='c3.png' class="img"/>
+            
+            <img id="a4" src='a4.png' class="img"/>
+            <img id="b4" src='b4.png' class="img"/>
+            <img id="c4" src='c4.png' class="img"/>
+
+        </div>	
+	 	</div>	
+	</div>
+	<div data-role="footer">
+    <input type="text" value="ok" id="ok" readonly style="display:none"/>
+		<h4>Roleta da Sorte</h4>
+	</div>
+    
+    
+   
+    
+</div>
+
+ <div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Roleta da Sorte</h1>
+	</div>
+	<div data-role="content">
+    <audio src="sound.mp3" preload="auto" id="musica"></audio>
+
+		<div style="display:none;" id="imgpage">
+        	<div id="imgFlyer">
+            	<img src="img1.png" width="300" height="280"/>
+                <img src="img2.png" width="300" height="280"/>
+                <img src="img3.png" width="300" height="280"/>
+                <img src="img4.png" width="300" height="280"/>
+                <img src="img5.png" width="300" height="280"/>
+                <img src="img6.png" width="300" height="280"/>
+            </div>
+            
+            <div id="flyerText">
+            	<img src="f03.png" width="450" height="280"/>
+                <img src="f01.png" width="450" height="280"/>
+                <img src="f02.png" width="450" height="280"/>
+            </div>
+        
+        </div>
+        
+        
+	</div>
+	<div data-role="footer">
+		<h4>Roleta da Sorte</h4>
+	</div>
+</div>
+</body>
+</html>
