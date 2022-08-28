@@ -28,21 +28,23 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
         <div class="container-fluid">
             <div class="row justify-content-md-left w-100">
-                <div class="col-md-auto">
-                    <a id="home" class="navbar-brand" href="index.html"><i class="fa fa-home"
-                            aria-hidden="true"></i></a>
-                </div>
-                <div class="col-md-auto align-self-center">
-                    <span>|</span>
-                </div>
-                <div class="col-md-auto align-self-center">
-                    <span id="hoje"></span>
-                </div>
-                <div class="col-md-auto align-self-center">
-                    <span>|</span>
-                </div>
-                <div class="col-md-auto align-self-center">
-                    <span id="hora"></span>
+                <div class="row justify-content-md-left">
+                    <div class="col align-self-center">
+                        <a id="home" class="navbar-brand" href="index.html"><i class="fa fa-home"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col align-self-center">
+                        <span>|</span>
+                    </div>
+                    <div class="col align-self-center">
+                        <span id="hoje"></span>
+                    </div>
+                    <div class="col align-self-center">
+                        <span>|</span>
+                    </div>
+                    <div class="col align-self-center">
+                        <span id="hora"></span>
+                    </div>
                 </div>
                 <div class="col text-right">
                     <a id="fullscreen1" class="navbar-brand" href="#" onclick="javascript:openFullscreen();"><i
@@ -55,26 +57,31 @@
             </div>
         </div>
     </nav>
-    <div class="row justify-content-md-center text-center">
-        <h1>Cronômetro</h1>
+    <div class="container">
+        <div class="row py-3 text-center">
+            <div class="col-12">
+                <h1>Cronômetro</h1>
+            </div>
+        </div>
+        <div class="row justify-content-md-center py-3 text-center">
+            <form name="form_main">
+                <div class="col-12">
+                    <span class="maior" id="cronometro">00:00:00:00</span>
+                </div>
+                <div class="row justify-content-md-center text-center">
+                    <div class="col-md-auto align-self-center" id="btn_start" style="padding: 15px;">
+                        <button class="btn btn-outline-light" type="button" name="start">Start</button>
+                    </div>
+                    <div class="col-md-auto align-self-center" id="btn_pouse" style="padding: 15px;" hidden>
+                        <button class="btn btn-outline-light" type="button" name="pause">Pause</button>
+                    </div>
+                    <div class="col-md-auto align-self-center" id="btn_reset" style="padding: 15px;" hidden>
+                        <button class="btn btn-outline-light" type="button" name="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <form name="form_main">
-        <div class="row justify-content-md-center text-center maior">
-            <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span
-                id="millisecond">00</span>
-        </div>
-        <div class="row justify-content-md-center text-center">
-            <div class="col-md-auto align-self-center" id="btn_start">
-                <button class="btn btn-outline-light" type="button" name="start">Start</button>
-            </div>
-            <div class="col-md-auto align-self-center" id="btn_pouse" hidden>
-                <button class="btn btn-outline-light" type="button" name="pause">Pause</button>
-            </div>
-            <div class="col-md-auto align-self-center" id="btn_reset" hidden>
-                <button class="btn btn-outline-light" type="button" name="reset">Reset</button>
-            </div>
-        </div>
-    </form>
     <script src="js/telacheia.js"></script>
     <script src="js/relogio.js"></script>
     <script src="js/aumentar_fonte.js"></script>
