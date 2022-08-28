@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
     <title>Cronômetro</title>
     <link rel="icon" type="image/x-icon" href="img/relogio.png">
@@ -27,43 +27,30 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
         <div class="container-fluid">
-            <div class="row justify-content-md-left w-100">
-                <div class="row justify-content-md-left">
-                    <div class="col align-self-center">
-                        <a id="home" class="navbar-brand" href="index.html"><i class="fa fa-home"
-                                aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col align-self-center">
-                        <span>|</span>
-                    </div>
-                    <div class="col align-self-center">
-                        <span id="hoje"></span>
-                    </div>
-                    <div class="col align-self-center">
-                        <span>|</span>
-                    </div>
-                    <div class="col align-self-center">
-                        <span id="hora"></span>
-                    </div>
-                </div>
-                <div class="col text-right">
+            <div class="row justify-content-md-left">
+                <div class="col-md-auto">
                     <a id="fullscreen1" class="navbar-brand" href="#" onclick="javascript:openFullscreen();"><i
                             class="fa fa-expand" aria-hidden="true"></i></a>
                     <a hidden id="fullscreen2" class="navbar-brand" href="#" onclick="javascript:closeFullscreen();"><i
                             class="fa fa-compress" aria-hidden="true"></i></a>
-                </div>
+                        </div>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-12">
+    <div class="container-fluid">
+        <div class="row justify-content-md-center text-center">
+            <div class="col-md-auto">
                 <h1>Cronômetro</h1>
             </div>
         </div>
+        <div class="row justify-content-md-center text-center">
+            <div class="col-md-auto">
+                <span id="hoje"></span><span>  |  </span><span id="hora"></span>
+            </div>
+        </div>
         <form name="form_main">
-            <div class="row text-center">
-                <div class="col-12">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-md-auto">
                     <span class="menor" id="cronometro">00:00:00:00</span>
                 </div>
             </div>
