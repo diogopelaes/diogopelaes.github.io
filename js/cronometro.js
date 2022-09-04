@@ -54,7 +54,10 @@ function timer() {
 }
 
 function returnData(input) {
-    return input > 10 ? input : `0${input}`
+    if (input < 10) {
+        return '0' + input.toString()
+    return input.toString()
+    }
 }
 function returnDataMillisecond(input) {
     if (input < 10) {
