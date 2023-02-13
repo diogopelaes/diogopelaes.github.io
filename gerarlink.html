@@ -26,10 +26,24 @@
 
 <body>
     <div class="container">
-        <h1>Link download Google</h1>
-        <input type="text">
-        
+        <div class="row justify-content-md-center py-3 text-center">
+            <h1>Link download Google</h1>
+        </div>
+        <div class="row justify-content-md-center py-3 text-center">
+            <label for="inputsm">link Google normal</label>
+            <input oninput="gerar(this)" class="form-control input-sm" id="inputsm" type="text" size="120">
+        </div>
+        <div class="row justify-content-md-center py-3 text-center">
+            <div class="col-12">
+                <span id="link"></span>
+            </div>
+            <div class="col-12">
+                <div class="col-md-auto py-3 text-center"><button onclick="clipboardCopy()" type="button" class="btn btn-outline-light">Copiar
+                        link</button></div>
+            </div>
+        </div>
     </div>
+    <script src="js/gerarlink.js"></script>
 </body>
 
 </html>
