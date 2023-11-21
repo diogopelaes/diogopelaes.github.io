@@ -50,6 +50,9 @@ function timer() {
         minute = 0;
         hour++;
     }
+    if (returnData(minute) === undefined){
+        console.log(returnData(minute));
+    }
     document.getElementById('cronometro').innerText = returnData(hour) + ':' + returnData(minute) +':' + returnData(second) + ":" + returnDataMillisecond(millisecond).substring(0, 2);
 }
 
