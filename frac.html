@@ -32,12 +32,12 @@
           <a id="home" class="navbar-brand" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
         </div>
         <div class="col text-right">
-          <a id="fullscreen1" class="navbar-brand" href="#" onclick="javascript:openFullscreen();"><i
+          <a id="fullscreen1" class="navbar-brand" href="#" onclick="openFullscreen();"><i
               class="fa fa-expand" aria-hidden="true"></i></a>
-          <a hidden id="fullscreen2" class="navbar-brand" href="#" onclick="javascript:closeFullscreen();"><i
+          <a hidden id="fullscreen2" class="navbar-brand" href="#" onclick="closeFullscreen();"><i
               class="fa fa-compress" aria-hidden="true"></i></a>
-          <!-- <a href="#" onclick="javascript:aumentar();"><i class="fa fa-font fa-lg" aria-hidden="true"></i></a>
-          <a href="#" onclick="javascript:diminuir();"><i class="fa fa-font" aria-hidden="true"></i></a> -->
+          <!-- <a href="#" onclick="aumentar();"><i class="fa fa-font fa-lg" aria-hidden="true"></i></a>
+          <a href="#" onclick="diminuir();"><i class="fa fa-font" aria-hidden="true"></i></a> -->
         </div>
       </div>
     </div>
@@ -50,18 +50,18 @@
       <div class="col-md-auto">
         <table class="fracoes">
           <tr id="fig1">
-            <td class="partes" id="parte1" onclick='javascript:pintar_parte(this, "1");ver_frac();'></td>
+            <td class="partes" id="parte1" onclick='pintar_parte(this, "1");ver_frac();'></td>
           </tr>
         </table>
       </div>
       <div class="col-md-auto">
         <div>
-          <input type="range" class="slider" min="1" max="20" step="1" value="1" id="sliderRange1"
-            oninput='javascript:fraction(this, "1");'>
+          <label for="sliderRange1"></label><input type="range" class="slider" min="1" max="20" step="1" value="1" id="sliderRange1"
+                                                   oninput='fraction(this, "1");'>
         </div>
         <div id="numerador1" hidden>0</div>
         <span class="frac" id="denominador1">1</span><span id="parte_text" class="frac"> Parte</span><br>
-        <input type="checkbox" id="show_frac" onclick="javascript:ver_frac();" class="checkbox"><label class="label_checkbox">Ver fração</label>
+        <label for="show_frac"></label><input type="checkbox" id="show_frac" onclick="ver_frac();" class="checkbox"><label class="label_checkbox">Ver fração</label>
       </div>
     </div>
     <div id="resul" hidden>
